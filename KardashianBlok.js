@@ -3,7 +3,7 @@ var start = + new Date();
 var KardashianKleanse = {
 
 	triggerWords: /\b(KARDASHIANS?|KRIS JENNER|KENDALL JENNER|KYLIE JENNER|NORTH WEST|KIMYE|DISICKS?)\b/i,
-	articleNames: ["li", ".post",".article",".story", ".g", ".zergentity", ".unit", ".lede", ".item", ".item-box", ".archive-item", ".news", ".entry"],
+	articleNames: ["li", ".post",".article",".story", ".g", ".zergentity", ".unit", ".lede", ".item", ".item-box", ".archive-item", ".news", ".entry", ".highlight"],
 
 	checkClass: function(element) {
 		if ($(element).hasClass("checked")) {
