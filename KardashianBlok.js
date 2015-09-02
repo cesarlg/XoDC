@@ -1,7 +1,5 @@
 
-console.log("This works.")
 var start = + new Date();
-
 var KardashianKleanse = {
 
 	triggerWords: /\b(KARDASHIANS?|KRIS JENNER|KENDALL JENNER|KYLIE JENNER|NORTH WEST|KIMYE|DISICKS?)\b/i,
@@ -25,13 +23,6 @@ var KardashianKleanse = {
 				containsKardashian = true;
 			}
 		}
-
-		console.log(containsKardashian);
-		
-		if (containsKardashian) {
-			console.log(element);
-			console.log(searchThis);
-		}
 		
 		return containsKardashian;
 	},
@@ -43,7 +34,7 @@ var KardashianKleanse = {
 		this.articleNames.forEach(function(name) {
 			$(name  + ':not(.checked)').addClass("checked").filter(function() {
 				return KardashianKleanse.findKardashians(this);
-			}).css({"opacity": "0.2"});//.css("display", "none")
+			}).css("display", "none")
 		})
 	},
 
